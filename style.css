@@ -1,0 +1,82 @@
+:root {
+    --light-bg: #f5f7f8;
+    --blue-black-bg: #1a237e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--blue-black-bg);
+    height: 50vh;
+    width: 100vw;
+}
+
+.container .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #f5f7f8;
+    border-radius:5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 700px;
+    height: 400px;
+}
+
+/* body {
+    background-color: #b0bec5;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    height: 70vh;
+}
+
+#card {
+    width: 30rem;
+    border: 2px dotted red;
+}
+
+h1 {
+    margin: 0;
+    padding: -20px;
+}
+
+p {
+    text-align: center;
+}
+
+#grid1 {
+    display: flex;
+    justify-content: space-between;
+}
+#grid2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_width {
+    width: 100px;
+}
+
+label {
+    width: 100px;
+    text-align: left;
+} */
+
