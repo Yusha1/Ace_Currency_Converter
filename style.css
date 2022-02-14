@@ -1,6 +1,7 @@
 :root {
     --light-bg: #f5f7f8;
     --blue-black-bg: #1a237e;
+    --dark-grey: #37474f;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
 .container {
     background-color: var(--blue-black-bg);
     height: 50vh;
-    width: 100vw;
+    width: auto;
 }
 
 .container .wrapper {
@@ -31,8 +32,71 @@ form {
     background-color: #f5f7f8;
     border-radius:5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    width: 700px;
-    height: 400px;
+    width: 750px;
+    height: 450px;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+}
+
+.logo .money-img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0;
+}
+
+.logo h1 {
+    margin: 0;
+}
+.logo p {
+    margin: 0;
+}
+
+/* Grid System */
+#grid-system {
+    margin: 15px 0 30px 0;
+}
+.grid-1 {
+    /* border: dotted black 2px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-1 label {
+    text-align: left;
+    width: 10rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+.grid-2 {
+    /* border: dotted red 2px; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.box-width {
+    width: 10rem;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+
+.btn {
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--blue-black-bg);
+    color: var(--light-bg);
 }
 
 /* body {
