@@ -59,43 +59,59 @@ form {
     margin: 0;
 }
 
-/* Grid System */
 #grid-system {
-    margin: 15px 0 30px 0;
-}
-.grid-1 {
-    /* border: dotted black 2px; */
     display: flex;
     justify-content: space-between;
+    /* border: 2px solid black; */
+    margin: 15px;
+    padding: 10px;
 }
 
-.grid-1 label {
-    text-align: left;
-    width: 10rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--dark-grey);
-}
-
-.grid-1 .from {
-    position: relative;
-    right: 70px
+.grid-1 {
+    /* border: dotted red 1px; */
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 
 .grid-2 {
-    /* border: dotted red 2px; */
+    /* border: dotted yellow 1px; */
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    flex-direction: column;
 }
 
 .grid-3 {
+    /* border: dotted green 1px; */
     display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
+    flex-direction: column;
 }
 
-.box-width { /* Key */
+.grid-4 {
+    /* border: dotted orange 1px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-5 {
+    /* border: dotted blue 1px; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#grid-system-2 {
+    margin: 15px;
+    padding: 10px;
+}
+
+#grid-system label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-grey);
+    padding-bottom: 5px;
+}
+
+.key {
     width: 10rem;
     font-size: 1.2rem;
     border-radius: 3px;
@@ -124,13 +140,13 @@ select:focus, input:focus, btn:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border: 1px solid black;
-    width: 50%;
+    text-align: left;
+    /* border: 1px solid black; */
+    width: 52%;
     height: 5rem;
     font-size: 3rem;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
 
 }
 
@@ -145,5 +161,72 @@ select:focus, input:focus, btn:focus {
 
 .convert-btn:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* Mobile  */
+@media(max-width: 500px) {
+    
+    .logo .money-img {
+        width: 7rem;
+        /* height: 10rem; */
+        margin: 0;
+    }
+
+    .logo h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .logo p {
+        margin: 0;
+        text-align: center;
+    }
+    
+    form {
+        width: 450px;
+        height: 700px;
+        padding: 20px;
+        margin: 50px;
+    }
+
+    #grid-system {
+        flex-direction: column;
+        margin: 10px; 
+        padding: 5px; 
+    }
+
+    .key {
+        width: 100%;
+        font-size: 1.1rem;
+        border-radius: 3px;
+        padding: 5px;
+        border:#bdbdbd solid 1px;
+        margin-bottom: 15px;
+    }
+
+    .swap-btn {
+        border-radius: 100px;
+        cursor: pointer;
+        width: 5rem;
+    }
+
+    .grid-5 {
+        flex-direction: column;
+    }
+
+    .convert-btn {
+        height: 3rem;
+        padding: 10px;
+    }
+
+    .rate-display{
+        width: 100%;
+        height: 4rem;
+        font-size: 2rem;
+        padding: 10px
+    }
+
+
 }
 

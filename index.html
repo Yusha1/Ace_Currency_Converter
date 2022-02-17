@@ -18,18 +18,16 @@
                     <p>Check live foreign currency exchange rates</p>
                 </div>
 
-                <div id="grid-system">
+                <div id="grid-system"> 
                     <div class="grid-1">
                         <label for="">Amount</label>
-                        <label for="" class="from">From</label>
-                        <!-- <label for=""></label> -->
-                        <label for="">To</label>
+                        <input type="number" id="amount" class="key" placeholder="0" value="1">
                     </div>
 
                     <div class="grid-2">
-                        <input type="number" id="amount-one" class="box-width" placeholder="0" value="1">
-                        <div id="currency-one">
-                            <select id="currency-1" class="box-width">
+                        <label for="" class="from">From</label>
+                        <!-- <div id="currency-one"> -->
+                            <select id="currency-1" class="key">
                                 <option value="AED">AED</option>
                                 <option value="ARS">ARS</option>
                                 <option value="AUD">AUD</option>
@@ -83,14 +81,20 @@
                                 <option value="VND">VND</option>
                                 <option value="ZAR">ZAR</option>
                             </select>
-                        </div>
+                        <!-- </div> -->
+                    </div>
 
-                        <div id="swap_rate_btn">
-                            <button class="swap-btn box-width" id="rate"><i class='fa-solid fa-arrow-right-arrow-left'></i></button>
-                        </div>
+                    <div class="grid-3">
+                        <label for="">&nbsp;</label>
+                        <!-- <div id="swap_rate_btn"> -->
+                            <button class="swap-btn key" id="rate"><i class='fa-solid fa-arrow-right-arrow-left'></i></button>
+                        <!-- </div> -->
+                    </div>
 
-                        <div id="currency-two">
-                            <select id="currency-2" class="box-width">
+                    <div class="grid-4">
+                        <label for="">To</label>
+                        <!-- <div id="currency-two"> -->
+                            <select id="currency-2" class="key">
                                 <option value="AED">AED</option>
                                 <option value="ARS">ARS</option>
                                 <option value="AUD">AUD</option>
@@ -144,23 +148,24 @@
                                 <option value="VND">VND</option>
                                 <option value="ZAR">ZAR</option>
                         </select>
-                        </div>
+                        <!-- </div> -->
                     </div>
-
-                    <div class="grid-3">
+                </div>
+                <div id="grid-system-2">
+                    <div class="grid-5">
                         <div class="rate-display">
-
+    
                         </div>
                         <label for=""></label>
                         <div id="convert_rate_btn">
-                            <button class="convert-btn box-width" id="convert-btn">Convert</button>
+                            <button class="convert-btn key" id="convert-btn">Convert</button>
                         </div>
                     </div>
-                </div>
+                </div>     
             </form>
         </div>    
     </div>
-    
+
     <script src="app.js"></script>
 </body>
 </html>
