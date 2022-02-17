@@ -1,6 +1,7 @@
 :root {
     --light-bg: #f5f7f8;
     --blue-black-bg: #1a237e;
+    --light-blue: #29b6f6;
     --dark-grey: #37474f;
 }
 
@@ -32,9 +33,9 @@ form {
     background-color: #f5f7f8;
     border-radius:5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    width: 750px;
-    height: 450px;
-    padding: 20px;
+    width: 900px;
+    height: 500px;
+    padding: 20px 50px;
 }
 
 .logo {
@@ -47,7 +48,7 @@ form {
 
 .logo .money-img {
     width: 10rem;
-    height: 10rem;
+    /* height: 10rem; */
     margin: 0;
 }
 
@@ -76,6 +77,11 @@ form {
     color: var(--dark-grey);
 }
 
+.grid-1 .from {
+    position: relative;
+    right: 70px
+}
+
 .grid-2 {
     /* border: dotted red 2px; */
     display: flex;
@@ -83,64 +89,61 @@ form {
     margin-top: 10px;
 }
 
-.box-width {
+.grid-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.box-width { /* Key */
     width: 10rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border-radius: 3px;
+    padding: 10px;
+    border:#bdbdbd solid 1px;
 }
 
-.btn {
-    border-radius: 30px;
+.swap-btn {
+    border-radius: 100px;
     cursor: pointer;
+    width: 3rem;
 }
 
-.btn:hover {
+.swap-btn:hover {
     background: var(--blue-black-bg);
     color: var(--light-bg);
 }
 
-/* body {
-    background-color: #b0bec5;
-    font-family: Arial, Helvetica, sans-serif;
+select:focus, input:focus, btn:focus {
+    outline: none;
+    border: var(--light-blue) 1px solid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.rate-display {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 0;
-    padding: 20px;
-    height: 70vh;
+    border: 1px solid black;
+    width: 50%;
+    height: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 5px;
+
 }
 
-#card {
-    width: 30rem;
-    border: 2px dotted red;
+.convert-btn {
+    height: 5rem;
+    background-color: var(--light-blue);
+    color: var(--light-bg);
+    cursor: pointer;
+    font-weight: bold;
+    border: var(--light-bg) 1px solid;
 }
 
-h1 {
-    margin: 0;
-    padding: -20px;
+.convert-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-p {
-    text-align: center;
-}
-
-#grid1 {
-    display: flex;
-    justify-content: space-between;
-}
-#grid2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.box_width {
-    width: 100px;
-}
-
-label {
-    width: 100px;
-    text-align: left;
-} */
 
